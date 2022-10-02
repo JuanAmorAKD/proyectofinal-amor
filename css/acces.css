@@ -1,0 +1,71 @@
+/*
+__________________________________
+<<<<<<<< CSS de CONTACTO >>>>>>>>>
+____________________________________
+*/
+
+#accesUser {
+  background-color: violet;
+  height: 100vh;
+  background-image: url("../images/mic-radio-hero2.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.acces__img img {
+  background-color: lightslategray;
+
+  width: 90px;
+  height: 90px;
+  border: 8px solid rgb(255, 255, 255);
+  border-radius: 50%;
+}
+
+.div-content__userAccesForm #username,
+#password,
+.userAccesForm__submit {
+  color: lightslategray;
+  height: 35px;
+  width: 75%;
+  border: none;
+  border-bottom: 1px solid lightslategray;
+  background: none;
+
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+.userAccesForm__submit {
+  background-color: lightslategray;
+  border: none;
+  color: black;
+  font-weight: 700;
+  border-radius: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.userAccesForm__submit:hover {
+  background-color: black;
+  color: azure;
+}
+#formUserAcces {
+  padding: 20px;
+  border: 0px;
+  background-color: azure;
+  border-radius: 30px;
+
+  animation: inform 1s;
+}
+
+@keyframes inform {
+  from {
+    transform: translateY(220px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
