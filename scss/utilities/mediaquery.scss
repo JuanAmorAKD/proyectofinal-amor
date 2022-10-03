@@ -1,0 +1,25 @@
+@media (max-width: 900px) {
+  #appDownload {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 400px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  #appDownload h2 {
+    display: inline;
+  }
+  .appDownload__text {
+    order: 1;
+  }
+  .appDownload_logosOS {
+    order: 2;
+  }
+  .logosOS__iphone,
+  .logosOS__android {
+    width: 90px;
+    padding-left: 15px;
+    padding-right: 25px;
+  }
+}
