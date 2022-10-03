@@ -1,51 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-}
+@import "base/_reset.scss";
+@import "base/_typo.scss";
 
-body {
-  font-family: "Cairo", sans-serif;
-  background-color: rgb(235, 235, 235);
-}
-body a {
-  color: rgb(53, 53, 53);
-  text-decoration: none;
-}
-body a:hover {
-  color: rgb(238, 87, 27);
-}
+@import "layout/_header.scss";
 
-header {
-  background-color: rgb(255, 255, 255);
-  border-bottom: 1px solid black;
-  height: auto;
-}
-
-header img {
-  height: 60px;
-  margin: 10px;
-}
-header a {
-  margin: 10px;
-}
-.navTeamsLogos {
-  background-color: rgb(255, 255, 255);
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-.navTeamsLogos__logo {
-  height: 27px;
-  cursor: pointer;
-}
-.navTeamsLogos__logo:hover {
-  transform: scale(110%);
-}
-#moreIzq,
-#moreDer {
-  color: black;
-  text-decoration: none;
-}
 .hero {
   color: rgb(19, 19, 19);
   /*margin-top: 10px;*/
@@ -165,78 +122,15 @@ header a {
 .livePrograms__fav {
   text-decoration: none;
   color: black;
+  &:hover {
+    color: red;
+  }
 }
-
-.nextProgramLite__fav:hover,
-.livePrograms__fav:hover {
-  color: red;
-}
-
 /*END proximos programas css*/
-#player {
-  background-color: rgb(218, 218, 218);
-  display: flex;
-  height: 70px;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-}
+/*acá va sticky player*/
+/*sección de APP download*/
+@import "components/_appDownload.scss";
 
-.player__imgProgram {
-  height: 90%;
-  padding: 8px;
-}
-
-.player__teamName {
-  margin-top: -8px;
-  display: block;
-}
-.player__playButton,
-.player__volumenButton {
-  padding: 10px;
-  height: 40px;
-}
-.player__volumenButton {
-  border-left: 1px solid black;
-}
-.playerTextProgram {
-  width: 300px;
-}
-
-#appDownload {
-  background-color: rgb(231, 207, 175);
-
-  height: 500px;
-
-  background-image: url("../images/fondo-app.jpeg");
-
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
-}
-
-.appDownload__h2 {
-  width: 300px;
-  font-size: 40px;
-  font-weight: 900;
-  color: aliceblue;
-}
-.appDownload__text p {
-  font-size: 20px;
-  font-weight: 600;
-  color: aliceblue;
-}
-
-.logosOS__iphone,
-.logosOS__android {
-  width: 120px;
-  padding-left: 15px;
-  padding-right: 25px;
-}
 @media (max-width: 900px) {
   #appDownload {
     flex-direction: column;
@@ -262,3 +156,4 @@ header a {
     padding-right: 25px;
   }
 }
+@import "layout/_playersticky.scss";

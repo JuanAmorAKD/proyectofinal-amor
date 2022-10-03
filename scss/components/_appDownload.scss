@@ -1,0 +1,34 @@
+#appDownload {
+  background-color: rgb(231, 207, 175);
+
+  height: 500px;
+
+  background-image: url("../images/fondo-app.jpeg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.appDownload__h2 {
+  width: 300px;
+  font-size: 40px;
+  font-weight: 900;
+  color: aliceblue;
+}
+.appDownload__text p {
+  font-size: 20px;
+  font-weight: 600;
+  color: aliceblue;
+}
+
+.logosOS__iphone,
+.logosOS__android {
+  width: 120px;
+  padding-left: 15px;
+  padding-right: 25px;
+}
