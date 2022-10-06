@@ -1,0 +1,10 @@
+preparar cuestionario
+relacionada a la tematica
+hora y fecha para entrevistar al cliente
+
+git remote set-url origin    copiar la ruta del reposit
+enter
+git status
+git add .
+git commit -m
+git push

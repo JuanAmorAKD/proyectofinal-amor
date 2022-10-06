@@ -1,0 +1,17 @@
+.livePrograms__liveBadge {
+  margin-left: 10px;
+  opacity: 1;
+  animation: aire 3s infinite;
+}
+@keyframes aire {
+  /* prende y apaga tipo rec */
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

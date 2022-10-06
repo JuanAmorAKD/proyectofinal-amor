@@ -6,9 +6,9 @@
     height: 400px;
     padding-left: 50px;
     padding-right: 50px;
-  }
-  #appDownload h2 {
-    display: inline;
+    h2 {
+      display: block;
+    }
   }
   .appDownload__text {
     order: 1;

@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*maps*/
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +14,6 @@ body {
     body a:hover {
       color: #ee571b; }
 
-/*maps*/
 header {
   background-color: white;
   border-bottom: 1px solid black;
@@ -83,6 +83,7 @@ header nav a {
 .livePrograms__articles h5 {
   display: inline; }
 
+/* LiveBadge es un Componente reutilizable de punto rojo titilando al estilo Rec/live*/
 .livePrograms__liveBadge {
   margin-left: 10px;
   opacity: 1;
@@ -197,6 +198,168 @@ header nav a {
   padding-left: 15px;
   padding-right: 25px; }
 
+/*--| START | import de css webs internas*/
+/*-----Web: Program-week*/
+.hero img {
+  background-color: #1a1818;
+  width: 80px;
+  height: 80px;
+  border: 22px solid white;
+  border-radius: 50%; }
+
+/*p {
+  padding-left: 10px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid gray;
+  border-left: 1px solid gray;
+}*/
+.videoTeamStory {
+  padding: 50px; }
+
+/*USER
+acá voy a poner todo lo necesario a la web de Creat-program.html teniendo de base el style.css*/
+.teamList {
+  display: inline-block;
+  text-align: center;
+  position: relative; }
+
+.teamList__content .material-symbols-outlined {
+  position: absolute;
+  right: 0;
+  background-color: aliceblue; }
+
+.teamList__content {
+  border-bottom: 1px solid #161610;
+  float: left; }
+
+.userAccesForm__submit {
+  height: 35px;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid lightslategray;
+  background: none;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  background-color: lightslategray;
+  border: none;
+  color: #1a1818;
+  font-weight: 700;
+  border-radius: 6px;
+  margin-top: 40px; }
+  .userAccesForm__submit:hover {
+    background-color: #1a1818;
+    color: azure; }
+
+/*acá voy a poner todo lo necesario a la web de Creat-program.html teniendo de base el style.css*/
+.div-content {
+  padding-bottom: 200px; }
+
+.div-content__userAccesForm .datosField,
+#password,
+#country-form,
+#createProgForm__team,
+.userAccesForm__submit {
+  color: lightslategray;
+  height: 35px;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid lightslategray;
+  background: none;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  text-transform: uppercase; }
+
+.userAccesForm__submit {
+  background-color: lightslategray;
+  border: none;
+  color: #1a1818;
+  font-weight: 700;
+  border-radius: 30px;
+  margin-top: 40px; }
+  .userAccesForm__submit:hover {
+    background-color: #1a1818;
+    color: azure; }
+
+#formUserAcces {
+  width: 500px;
+  padding: 20px;
+  border: 0px;
+  background-color: azure;
+  border-radius: 30px; }
+
+hr {
+  margin: 30px; }
+
+.p-dato1 {
+  padding: 20px;
+  border: 0px;
+  background-color: azure;
+  border-radius: 30px; }
+
+.p-dato2 {
+  border-top: 1px solid #424242; }
+
+/*
+__________________________________
+<<<<<<<< CSS de CONTACTO >>>>>>>>>
+____________________________________
+*/
+#accesUser {
+  background-color: violet;
+  height: 100vh;
+  background-image: url("../images/mic-radio-hero2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+.acces__img img {
+  background-color: lightslategray;
+  width: 90px;
+  height: 90px;
+  border: 8px solid white;
+  border-radius: 50%; }
+
+.div-content__userAccesForm #username,
+#password,
+.userAccesForm__submit {
+  color: lightslategray;
+  height: 35px;
+  width: 75%;
+  border: none;
+  border-bottom: 1px solid lightslategray;
+  background: none;
+  margin-top: 10px;
+  text-transform: uppercase; }
+
+.userAccesForm__submit {
+  background-color: lightslategray;
+  border: none;
+  color: #1a1818;
+  font-weight: 700;
+  border-radius: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+  .userAccesForm__submit:hover {
+    background-color: #1a1818;
+    color: azure; }
+
+#formUserAcces {
+  padding: 20px;
+  border: 0px;
+  background-color: azure;
+  border-radius: 30px;
+  animation: inform 1s; }
+
+@keyframes inform {
+  from {
+    transform: translateY(220px); }
+  to {
+    transform: translateX(0px); } }
+
+/*--| END | import de css webs internas*/
 /*adaptación usando Media query*/
 @media (max-width: 900px) {
   #appDownload {
@@ -206,8 +369,8 @@ header nav a {
     height: 400px;
     padding-left: 50px;
     padding-right: 50px; }
-  #appDownload h2 {
-    display: inline; }
+    #appDownload h2 {
+      display: block; }
   .appDownload__text {
     order: 1; }
   .appDownload_logosOS {
@@ -241,7 +404,7 @@ header nav a {
   height: 40px; }
 
 .player__volumenButton {
-  border-left: 1px solid black; }
+  border-left: 1px solid #1a1818; }
 
 .playerTextProgram {
   width: 300px; }

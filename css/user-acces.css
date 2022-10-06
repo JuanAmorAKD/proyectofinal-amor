@@ -1,0 +1,62 @@
+/*form {
+}*/
+
+/*acá voy a poner todo lo necesario a la web de Creat-program.html teniendo de base el style.css*/
+.main {
+  background-color: lightslategray;
+  background-image: url(https://rare-gallery.com/thumbs/5420253-microphone-technology-wallpaper-music-wallpapers-music-background-music-mic-sound-recording-record-bokeh-blur-metal-late-nite-classic-mic-old-school-antique-sing-radio-free-images.jpg);
+  background-size: cover;
+}
+.div-content {
+  text-align: center;
+  height: 700px;
+}
+.hero {
+  display: none;
+  background-image: none;
+  background-color: rgb(39, 39, 39);
+}
+.hero__img img {
+  background-color: lightslategray;
+
+  width: 80px;
+  height: 80px;
+  border: 8px solid rgb(255, 255, 255);
+  border-radius: 50%;
+}
+
+.div-content__userAccesForm #username,
+#password,
+.userAccesForm__submit {
+  color: lightslategray;
+  height: 35px;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid lightslategray;
+  background: none;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+.userAccesForm__submit {
+  background-color: lightslategray;
+  border: none;
+  color: black;
+  font-weight: 700;
+  border-radius: 30px;
+  margin-top: 40px;
+}
+.userAccesForm__submit:hover {
+  background-color: black;
+  color: azure;
+}
+#formUserAcces {
+  width: 500px;
+  padding: 20px;
+  border: 0px;
+  background-color: azure;
+  border-radius: 30px;
+}
+hr {
+  margin: 30px;
+}

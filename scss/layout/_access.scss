@@ -29,33 +29,33 @@ ____________________________________
 .div-content__userAccesForm #username,
 #password,
 .userAccesForm__submit {
-  color: lightslategray;
+  color: $color-light;
   height: 35px;
   width: 75%;
   border: none;
-  border-bottom: 1px solid lightslategray;
+  border-bottom: 1px solid $color-light;
   background: none;
 
   margin-top: 10px;
   text-transform: uppercase;
 }
 .userAccesForm__submit {
-  background-color: lightslategray;
+  background-color: $color-light;
   border: none;
-  color: black;
+  color: $color-black;
   font-weight: 700;
   border-radius: 30px;
   margin-top: 40px;
   margin-bottom: 40px;
-}
-.userAccesForm__submit:hover {
-  background-color: black;
-  color: azure;
+  &:hover {
+    background-color: $color-black;
+    color: $color-azure;
+  }
 }
 #formUserAcces {
   padding: 20px;
   border: 0px;
-  background-color: azure;
+  background-color: $color-azure;
   border-radius: 30px;
 
   animation: inform 1s;

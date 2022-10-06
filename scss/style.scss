@@ -1,7 +1,7 @@
+@import "utilities/variables";
+
 @import "base/reset";
 @import "base/typo";
-
-@import "utilities/variables";
 
 @import "layout/header";
 
@@ -54,23 +54,8 @@
 .livePrograms__articles h5 {
   display: inline;
 }
-.livePrograms__liveBadge {
-  margin-left: 10px;
-  opacity: 1;
-  animation: aire 3s infinite;
-}
-@keyframes aire {
-  /* prende y apaga tipo rec */
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+/* LiveBadge es un Componente reutilizable de punto rojo titilando al estilo Rec/live*/
+@import "components/liveBadge";
 
 /*START proximos programas css*/
 
@@ -146,8 +131,17 @@
     }
   }
 }
+
 /*sección de APP download*/
 @import "components/_appDownload.scss";
+
+/*--| START | import de css webs internas*/
+@import "layout/_program-week.scss";
+@import "layout/_user-template.scss";
+@import "layout/_create-programs.scss";
+@import "layout/_access";
+
+/*--| END | import de css webs internas*/
 
 /*adaptación usando Media query*/
 @import "utilities/mediaquery";
