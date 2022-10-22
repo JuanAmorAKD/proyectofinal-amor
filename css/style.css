@@ -251,17 +251,11 @@ acá voy a poner todo lo necesario a la web de Creat-program.html teniendo de ba
     color: azure; }
 
 /*acá voy a poner todo lo necesario a la web de Creat-program.html teniendo de base el style.css*/
-.div-content {
-  padding-bottom: 200px; }
-
-.div-content__userAccesForm .datosField,
-#password,
+.datosField,
 #country-form,
-#createProgForm__team,
-.userAccesForm__submit {
-  color: lightslategray;
+#createProgForm__team {
   height: 35px;
-  width: 300px;
+  width: 100%;
   border: none;
   border-bottom: 1px solid lightslategray;
   background: none;
@@ -269,35 +263,23 @@ acá voy a poner todo lo necesario a la web de Creat-program.html teniendo de ba
   margin-top: 10px;
   text-transform: uppercase; }
 
-.userAccesForm__submit {
-  background-color: lightslategray;
-  border: none;
-  color: #1a1818;
-  font-weight: 700;
-  border-radius: 30px;
-  margin-top: 40px; }
-  .userAccesForm__submit:hover {
-    background-color: #1a1818;
-    color: azure; }
-
-#formUserAcces {
-  width: 500px;
-  padding: 20px;
-  border: 0px;
-  background-color: azure;
-  border-radius: 30px; }
-
-hr {
-  margin: 30px; }
+input[type="checkbox"] {
+  cursor: pointer;
+  margin: 5px;
+  width: 16px;
+  height: 16px; }
 
 .p-dato1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   padding: 20px;
   border: 0px;
-  background-color: azure;
   border-radius: 30px; }
 
-.p-dato2 {
-  border-top: 1px solid #424242; }
+.p-dato1 p {
+  width: 80%; }
 
 /*
 __________________________________
@@ -351,7 +333,8 @@ ____________________________________
   border: 0px;
   background-color: azure;
   border-radius: 30px;
-  animation: inform 1s; }
+  animation: inform 1s;
+  width: 500px; }
 
 @keyframes inform {
   from {

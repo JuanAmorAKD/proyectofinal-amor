@@ -155,23 +155,18 @@
           ingresá los datos de tu radio para formar parte.</span
         >
       </section>
-      <div class="div-content">
+
+      <main class="container-fluid">
       
             <h2>Completá el siguiente formulario:</h2>
           <div class="p-dato1">
-            <p >Registrá tu porgrama en el sitio oficial de Radios Partidarias del fútbol, el lugar del hincha, donde podrás encontrar otros programas que comparten tu misma pasión, la de transmitirle a los hinchas la actualidad, información de su querido club con la camiseta puesta, con gente que comparte su misma pasión en un mismo lugar.  Somos el rincón donde el hincha se siente a gusto, lo que no puede encontrar en las grandes radios.
-
-              Y qué mejor que estar todos juntos?
-              
-              Al registrar tu programa, formará parte de un listado actualizado de radios de tu mismo equipo lo que ayuda al oyente a un rápido acceso en un mismo lugar brindándole todos las redes sociales y formas de contacto con tu programa para captar nuevos oyentes y para mantener informado en tiempo real a aquel fiel oyente.</p><br>
-              <p>Para sugerencias, consultas o notificar errores, contactate mediante MD en culaquiera de nuestras redes sociales o al mail <a href="#" >info@radiospartidarias.com.ar</a> para que nuestro equipo solucione tu inquietud
-
-                publicitá con nosotros, envianos un mail a <a href="#" >info@radiospartidarias.com.ar</a> y el equipo de prensa se contará a la brevedad</p></div>   
-                <div class="div-content__derechaDiv">
-                <fieldset id="formUserAcces">
+            
+              <br>  
+                
+                
                    <form class="div-content__userAccesForm">
-                    
-                      <legend><h3>Datos del programa</h3></legend>
+                    <fieldset id="formUserAcces">
+                      <legend><h4>Datos del programa</h4></legend>
 
                       <!--carga datos programa-->
                       <label for="nombre-programa"></label><br>
@@ -199,9 +194,9 @@
               
               
               <select id="createProgForm__team" name="equipo"> Equipo 
-                <option value="a">Racing</option>
-                <option value="b">boca</option>
-                <option value="r">River</option>
+                <option value="racing">Racing</option>
+                <option value="boca">boca</option>
+                <option value="river">River</option>
                 <label for="radio"></label><br>
                       <input
                         type="text"
@@ -209,14 +204,15 @@
                         name="nombre-Radio"
                         placeholder="Nombre de la Radio"
                       />
-                      <label for="days"><h4>Dias y Horarios</h4></label><br>
-                      <input type="checkbox" name="gender" value="masculino" />Lunes
-                      <input type="checkbox" name="gender" value="femenino" />Martes
-                <input type="checkbox" name="gender" value="otro" />Miércoles
-                <input type="checkbox" name="gender" value="otro" />Jueves
-                <input type="checkbox" name="gender" value="otro" />Viernes
-
-              </select>
+                      <label  for="days"><h4>Dias y Horarios</h4></label><br>
+                      <input  type="checkbox" name="day" value="lunes" />Lunes
+                      <input type="checkbox" name="day" value="martes" />Martes
+                <input type="checkbox" name="day" value="miercoles" />Miércoles
+                <input type="checkbox" name="day" value="jueves" />Jueves<br>
+                <input type="checkbox" name="day" value="viernes" />Viernes
+                <input type="checkbox" name="day" value="sabado" />Sábado
+                <input type="checkbox" name="day" value="domingo" />Domingo
+              </select><br>
                       <input
                         class="userAccesForm__submit"
                         type="submit"
@@ -224,10 +220,18 @@
                       />
                      
                   
-                    </fieldset> 
-                    </div>
-              </form>       
-    </div>
+                    
+                  
+                 </fieldset> </form>    
+                 <br><p >Registrá tu porgrama en el sitio oficial de Radios Partidarias del fútbol, el lugar del hincha, donde podrás encontrar otros programas que comparten tu misma pasión, la de transmitirle a los hinchas la actualidad, información de su querido club con la camiseta puesta, con gente que comparte su misma pasión en un mismo lugar.  Somos el rincón donde el hincha se siente a gusto, lo que no puede encontrar en las grandes radios.
+
+                  Y qué mejor que estar todos juntos?
+                  
+                  Al registrar tu programa, formará parte de un listado actualizado de radios de tu mismo equipo lo que ayuda al oyente a un rápido acceso en un mismo lugar brindándole todos las redes sociales y formas de contacto con tu programa para captar nuevos oyentes y para mantener informado en tiempo real a aquel fiel oyente.</p><br>
+              <p>Para sugerencias, consultas o notificar errores, contactate mediante MD en culaquiera de nuestras redes sociales o al mail <a href="#" >info@radiospartidarias.com.ar</a> para que nuestro equipo solucione tu inquietud
+
+                publicitá con nosotros, envianos un mail a <a href="#" >info@radiospartidarias.com.ar</a> y el equipo de prensa se contará a la brevedad</p></div> 
+            </main>
 
   
     <div class="container">
@@ -257,7 +261,7 @@
         alt="Programa Racing Sports"
       />
       <div class="playerTextProgram">
-        <h4 class="player__title">Nombre del Programa</h4>
+        <h4 class="player__title">Racing Sports</h4>
 
         <span class="player__teamName"> Racing Club</span>
       </div>

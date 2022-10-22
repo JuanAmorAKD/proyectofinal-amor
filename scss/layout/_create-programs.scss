@@ -1,16 +1,10 @@
 /*acá voy a poner todo lo necesario a la web de Creat-program.html teniendo de base el style.css*/
-.div-content {
-  padding-bottom: 200px;
-}
 
-.div-content__userAccesForm .datosField,
-#password,
+.datosField,
 #country-form,
-#createProgForm__team,
-.userAccesForm__submit {
-  color: $color-light;
+#createProgForm__team {
   height: 35px;
-  width: 300px;
+  width: 100%;
   border: none;
   border-bottom: 1px solid $color-light;
   background: none;
@@ -18,35 +12,26 @@
   margin-top: 10px;
   text-transform: uppercase;
 }
-.userAccesForm__submit {
-  background-color: $color-light;
-  border: none;
-  color: $color-black;
-  font-weight: 700;
-  border-radius: 30px;
-  margin-top: 40px;
-  &:hover {
-    background-color: $color-black;
-    color: $color-azure;
-  }
-}
-#formUserAcces {
-  width: 500px;
-  padding: 20px;
-  border: 0px;
-  background-color: $color-azure;
-  border-radius: 30px;
-}
-hr {
-  margin: 30px;
-}
-.p-dato1 {
-  padding: 20px;
-  border: 0px;
-  background-color: $color-azure;
-  border-radius: 30px;
+
+input[type="checkbox"] {
+  cursor: pointer;
+  margin: 5px;
+  width: 16px;
+  height: 16px;
 }
 
-.p-dato2 {
-  border-top: 1px solid rgb(66, 66, 66);
+.p-dato1 {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 20px;
+  border: 0px;
+
+  border-radius: 30px;
+}
+.p-dato1 p {
+  width: 80%;
 }
