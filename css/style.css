@@ -204,7 +204,7 @@ header nav a {
   background-color: #1a1818;
   width: 80px;
   height: 80px;
-  border: 22px solid white;
+  border: 2px solid white;
   border-radius: 50%; }
 
 /*p {
@@ -214,7 +214,10 @@ header nav a {
   border-left: 1px solid gray;
 }*/
 .videoTeamStory {
-  padding: 50px; }
+  margin-bottom: 70px;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center; }
 
 /*USER
 acá voy a poner todo lo necesario a la web de Creat-program.html teniendo de base el style.css*/

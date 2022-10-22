@@ -5,7 +5,7 @@
 
   width: 80px;
   height: 80px;
-  border: 22px solid rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 50%;
 }
 
@@ -16,5 +16,8 @@
   border-left: 1px solid gray;
 }*/
 .videoTeamStory {
-  padding: 50px;
+  margin-bottom: 70px;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
 }
