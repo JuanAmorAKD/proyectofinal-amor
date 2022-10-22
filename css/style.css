@@ -222,36 +222,20 @@ header nav a {
 /*USER
 acá voy a poner todo lo necesario a la web de Creat-program.html teniendo de base el style.css*/
 .teamList {
-  display: inline-block;
+  display: flex;
+  gap: 12px;
   text-align: center;
-  position: relative; }
+  position: relative;
+  margin-bottom: 70px; }
+  .teamList__team {
+    height: 50px; }
+  .teamList__content {
+    border-bottom: 1px solid #161610;
+    float: left; }
 
-.teamList__content .material-symbols-outlined {
+.teamList .material-symbols-outlined {
   position: absolute;
-  right: 0;
   background-color: aliceblue; }
-
-.teamList__content {
-  border-bottom: 1px solid #161610;
-  float: left; }
-
-.userAccesForm__submit {
-  height: 35px;
-  width: 300px;
-  border: none;
-  border-bottom: 1px solid lightslategray;
-  background: none;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-  background-color: lightslategray;
-  border: none;
-  color: #1a1818;
-  font-weight: 700;
-  border-radius: 6px;
-  margin-top: 40px; }
-  .userAccesForm__submit:hover {
-    background-color: #1a1818;
-    color: azure; }
 
 /*acá voy a poner todo lo necesario a la web de Creat-program.html teniendo de base el style.css*/
 .datosField,

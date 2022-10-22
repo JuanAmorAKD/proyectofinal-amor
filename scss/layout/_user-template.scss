@@ -2,38 +2,21 @@
 acá voy a poner todo lo necesario a la web de Creat-program.html teniendo de base el style.css*/
 
 .teamList {
-  display: inline-block;
+  display: flex;
+  gap: 12px;
   text-align: center;
   position: relative;
-}
-.teamList__content .material-symbols-outlined {
-  position: absolute;
-  right: 0;
-  background-color: aliceblue;
-}
-
-.teamList__content {
-  border-bottom: 1px solid rgb(22, 22, 16);
-  float: left;
-}
-
-.userAccesForm__submit {
-  height: 35px;
-  width: 300px;
-  border: none;
-  border-bottom: 1px solid $color-light;
-  background: none;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-  background-color: $color-light;
-  border: none;
-  color: $color-black;
-  font-weight: 700;
-  border-radius: 6px;
-  margin-top: 40px;
-
-  &:hover {
-    background-color: $color-black;
-    color: $color-azure;
+  margin-bottom: 70px;
+  &__team {
+    height: 50px;
   }
+  &__content {
+    border-bottom: 1px solid rgb(22, 22, 16);
+    float: left;
+  }
+}
+.teamList .material-symbols-outlined {
+  position: absolute;
+
+  background-color: aliceblue;
 }
