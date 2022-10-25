@@ -266,7 +266,7 @@ input[type="checkbox"] {
   border-radius: 30px; }
 
 .p-dato1 p {
-  width: 80%; }
+  width: 90%; }
 
 /*
 __________________________________
@@ -321,7 +321,7 @@ ____________________________________
   background-color: azure;
   border-radius: 30px;
   animation: inform 1s;
-  width: 500px; }
+  width: 480px; }
 
 @keyframes inform {
   from {
@@ -349,7 +349,9 @@ ____________________________________
   .logosOS__android {
     width: 90px;
     padding-left: 15px;
-    padding-right: 25px; } }
+    padding-right: 25px; }
+  #formUserAcces {
+    margin-top: 50px; } }
 
 /*acá va el sticky player del footer*/
 #player {
