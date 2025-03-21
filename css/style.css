@@ -7,7 +7,8 @@
 
 body {
   font-family: "Cairo", sans-serif;
-  background-color: #ebebeb; }
+  background-color: var(--bg-primary);
+  color: var(--text-primary); }
   body a {
     color: #353535;
     text-decoration: none; }
@@ -85,12 +86,14 @@ header nav a {
 
 /* LiveBadge es un Componente reutilizable de punto rojo titilando al estilo Rec/live*/
 .livePrograms__liveBadge {
-  margin-left: 10px;
-  opacity: 1;
-  animation: aire 3s infinite; }
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 8px 15px;
+  font-weight: bold;
+  animation: pulse 2s infinite; }
 
-@keyframes aire {
-  /* prende y apaga tipo rec */
+@keyframes pulse {
   0% {
     opacity: 1; }
   50% {
@@ -380,3 +383,36 @@ ____________________________________
 
 .playerTextProgram {
   width: 300px; }
+
+:root {
+  /* Tema claro (default) */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --text-primary: #212529;
+  --text-secondary: #6c757d;
+  --border-color: #dee2e6;
+  --card-bg: #ffffff;
+  --nav-bg: #f8f9fa;
+}
+
+[data-theme="dark"] {
+  /* Tema oscuro */
+  --bg-primary: #121212;
+  --bg-secondary: #1e1e1e;
+  --text-primary: #ffffff;
+  --text-secondary: #b3b3b3;
+  --border-color: #2d2d2d;
+  --card-bg: #1e1e1e;
+  --nav-bg: #1e1e1e;
+}
+
+/* Aplicar variables */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.livePrograms__articles .card {
+  position: relative;
+  transition: transform 0.2s;
+}
